@@ -7,4 +7,11 @@ private class HelloServiceTest {
         String actual = HelloService.sayHello();
         System.assertEquals(expected, actual);
     }
+    
+    @IsTest
+    private static void sayHelloByName() {
+        String expected = 'Hello, Metecho!';
+        String actual = HelloService.sayHello('Metecho');
+        System.assertEquals(expected, actual);
+    }
 }
