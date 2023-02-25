@@ -14,4 +14,11 @@ private class HelloServiceTest {
         String actual = HelloService.sayHello('Metecho');
         System.assertEquals(expected, actual);
     }
+    
+    @IsTest
+    private static void sayHelloByFirstAndLastName() {
+        String expected = 'Hello, Axel Rose!';
+        String actual = HelloService.sayHello('Axel', 'Rose');
+        System.assertEquals(expected, actual);
+    }
 }
